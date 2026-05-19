@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-19T00:00:00Z",
+  "apps": [
+    {
+      "id": "primal",
+      "name": "Primal",
+      "url": "https://primal.net",
+      "description": "Social client + wallet",
+      "identityTypes": ["social"],
+      "categories": ["social", "wallet"],
+      "nip46Support": true,
+      "badges": ["featured"]
+    },
+    {
+      "id": "damus",
+      "name": "Damus",
+      "url": "https://damus.io",
+      "description": "iOS Nostr client",
+      "identityTypes": ["social"],
+      "categories": ["social"],
+      "nip46Support": true
+    },
+    {
+      "id": "coracle",
+      "name": "Coracle",
+      "url": "https://coracle.social",
+      "description": "Community-focused client",
+      "identityTypes": ["social", "chat", "anon"],
+      "categories": ["social", "groups", "messaging"],
+      "nip46Support": true
+    },
+    {
+      "id": "snort",
+      "name": "Snort",
+      "url": "https://snort.social",
+      "description": "Fast web client",
+      "identityTypes": ["social", "anon"],
+      "categories": ["social"],
+      "nip46Support": true
+    },
+    {
+      "id": "nostrudel",
+      "name": "noStrudel",
+      "url": "https://nostrudel.ninja",
+      "description": "Power-user web client",
+      "identityTypes": ["social", "dev"],
+      "categories": ["social", "tools"],
+      "nip46Support": true
+    },
+    {
+      "id": "yakihonne",
+      "name": "YakiHonne",
+      "url": "https://yakihonne.com",
+      "description": "Long-form content",
+      "identityTypes": ["social"],
+      "categories": ["longform"],
+      "nip46Support": true
+    },
+    {
+      "id": "0xchat",
+      "name": "0xChat",
+      "url": "https://0xchat.com",
+      "description": "Encrypted messaging",
+      "identityTypes": ["chat"],
+      "categories": ["messaging"],
+      "nip46Support": false
+    },
+    {
+      "id": "nymchat",
+      "name": "NymChat",
+      "url": "https://nymchat.app",
+      "description": "Anonymous messaging",
+      "identityTypes": ["chat", "anon"],
+      "categories": ["messaging"],
+      "nip46Support": false
+    },
+    {
+      "id": "blowater",
+      "name": "Blowater",
+      "url": "https://blowater.app",
+      "description": "Nostr messenger",
+      "identityTypes": ["chat"],
+      "categories": ["messaging"],
+      "nip46Support": false
+    },
+    {
+      "id": "iris",
+      "name": "Iris",
+      "url": "https://iris.to",
+      "description": "Professional Nostr client",
+      "identityTypes": ["work"],
+      "categories": ["social"],
+      "nip46Support": true
+    },
+    {
+      "id": "docstr",
+      "name": "Docstr",
+      "url": "https://docstr.app",
+      "description": "Collaborative docs",
+      "identityTypes": ["work"],
+      "categories": ["publishing", "tools"],
+      "nip46Support": false
+    },
+    {
+      "id": "highlighter",
+      "name": "Highlighter",
+      "url": "https://highlighter.com",
+      "description": "Publishing platform",
+      "identityTypes": ["work"],
+      "categories": ["publishing", "longform"],
+      "nip46Support": true
+    },
+    {
+      "id": "habla",
+      "name": "Habla",
+      "url": "https://habla.news",
+      "description": "Long-form writing",
+      "identityTypes": ["work"],
+      "categories": ["longform", "publishing"],
+      "nip46Support": true
+    },
+    {
+      "id": "wikifreedia",
+      "name": "Wikifreedia",
+      "url": "https://wikifreedia.xyz",
+      "description": "Decentralised wiki",
+      "identityTypes": ["work"],
+      "categories": ["wiki"],
+      "nip46Support": false
+    },
+    {
+      "id": "gitworkshop",
+      "name": "GitWorkshop",
+      "url": "https://gitworkshop.dev",
+      "description": "Git collaboration",
+      "identityTypes": ["dev"],
+      "categories": ["code"],
+      "nip46Support": false
+    },
+    {
+      "id": "njump",
+      "name": "njump",
+      "url": "https://njump.me",
+      "description": "Nostr event viewer",
+      "identityTypes": ["dev"],
+      "categories": ["tools"],
+      "nip46Support": false
+    },
+    {
+      "id": "nostrband",
+      "name": "nostr.band",
+      "url": "https://nostr.band",
+      "description": "Search + analytics",
+      "identityTypes": ["dev"],
+      "categories": ["search", "tools"],
+      "nip46Support": false
+    },
+    {
+      "id": "dvms",
+      "name": "DVMs.org",
+      "url": "https://dvms.org",
+      "description": "AI agents marketplace",
+      "identityTypes": ["dev"],
+      "categories": ["marketplace", "tools"],
+      "nip46Support": false
+    },
+    {
+      "id": "stacker",
+      "name": "Stacker News",
+      "url": "https://stacker.news",
+      "description": "Anonymous discussion",
+      "identityTypes": ["anon"],
+      "categories": ["social"],
+      "nip46Support": false
+    }
+  ]
+}

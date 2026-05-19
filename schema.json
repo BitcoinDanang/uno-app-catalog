@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://catalog.nostr.uno/schema.json",
+  "title": "Uno App Catalog Entry",
+  "description": "Schema for entries in the Uno app catalog (R-DISCOVER Phase A).",
+  "type": "object",
+  "required": ["id", "name", "url", "description", "identityTypes", "categories", "nip46Support"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "description": "Stable kebab-case identifier (e.g. \"primal\", \"0xchat\")."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "icon": {
+      "type": "string",
+      "format": "uri",
+      "description": "Optional https URL to a square app icon."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 280
+    },
+    "identityTypes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": ["social", "chat", "work", "dev", "anon"]
+      },
+      "description": "Which identity colors this app is relevant to."
+    },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "social",
+          "messaging",
+          "longform",
+          "publishing",
+          "wallet",
+          "search",
+          "wiki",
+          "code",
+          "marketplace",
+          "tools",
+          "media",
+          "groups"
+        ]
+      }
+    },
+    "nip46Support": {
+      "type": "boolean",
+      "description": "Whether the app supports NIP-46 remote signing today."
+    },
+    "badges": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": ["new", "featured", "verified", "open-source", "self-host", "beta"]
+      },
+      "default": []
+    },
+    "zapstoreKind32267Mirror": {
+      "type": "string",
+      "description": "Optional naddr/nevent pointer to a Zapstore kind:32267 mirror.",
+      "pattern": "^(naddr1|nevent1|note1)[0-9a-z]+$"
+    }
+  }
+}
