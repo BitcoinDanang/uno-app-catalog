@@ -1,24 +1,35 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-19T00:00:00Z",
+  "updatedAt": "2026-05-20T03:33:34.629Z",
   "apps": [
     {
       "id": "primal",
       "name": "Primal",
       "url": "https://primal.net",
       "description": "Social client + wallet",
-      "identityTypes": ["social"],
-      "categories": ["social", "wallet"],
+      "identityTypes": [
+        "social"
+      ],
+      "categories": [
+        "social",
+        "wallet"
+      ],
       "nip46Support": true,
-      "badges": ["featured"]
+      "badges": [
+        "featured"
+      ]
     },
     {
       "id": "damus",
       "name": "Damus",
       "url": "https://damus.io",
       "description": "iOS Nostr client",
-      "identityTypes": ["social"],
-      "categories": ["social"],
+      "identityTypes": [
+        "social"
+      ],
+      "categories": [
+        "social"
+      ],
       "nip46Support": true
     },
     {
@@ -26,8 +37,16 @@
       "name": "Coracle",
       "url": "https://coracle.social",
       "description": "Community-focused client",
-      "identityTypes": ["social", "chat", "anon"],
-      "categories": ["social", "groups", "messaging"],
+      "identityTypes": [
+        "social",
+        "chat",
+        "anon"
+      ],
+      "categories": [
+        "social",
+        "groups",
+        "messaging"
+      ],
       "nip46Support": true
     },
     {
@@ -35,8 +54,13 @@
       "name": "Snort",
       "url": "https://snort.social",
       "description": "Fast web client",
-      "identityTypes": ["social", "anon"],
-      "categories": ["social"],
+      "identityTypes": [
+        "social",
+        "anon"
+      ],
+      "categories": [
+        "social"
+      ],
       "nip46Support": true
     },
     {
@@ -44,26 +68,42 @@
       "name": "noStrudel",
       "url": "https://nostrudel.ninja",
       "description": "Power-user web client",
-      "identityTypes": ["social", "dev"],
-      "categories": ["social", "tools"],
-      "nip46Support": true
+      "identityTypes": [
+        "social",
+        "dev"
+      ],
+      "categories": [
+        "social",
+        "tools"
+      ],
+      "nip46Support": true,
+      "addedAt": "2026-05-15"
     },
     {
       "id": "yakihonne",
       "name": "YakiHonne",
       "url": "https://yakihonne.com",
       "description": "Long-form content",
-      "identityTypes": ["social"],
-      "categories": ["longform"],
-      "nip46Support": true
+      "identityTypes": [
+        "social"
+      ],
+      "categories": [
+        "longform"
+      ],
+      "nip46Support": true,
+      "addedAt": "2026-05-15"
     },
     {
       "id": "0xchat",
       "name": "0xChat",
       "url": "https://0xchat.com",
       "description": "Encrypted messaging",
-      "identityTypes": ["chat"],
-      "categories": ["messaging"],
+      "identityTypes": [
+        "chat"
+      ],
+      "categories": [
+        "messaging"
+      ],
       "nip46Support": false
     },
     {
@@ -71,8 +111,13 @@
       "name": "NymChat",
       "url": "https://nymchat.app",
       "description": "Anonymous messaging",
-      "identityTypes": ["chat", "anon"],
-      "categories": ["messaging"],
+      "identityTypes": [
+        "chat",
+        "anon"
+      ],
+      "categories": [
+        "messaging"
+      ],
       "nip46Support": false
     },
     {
@@ -80,8 +125,12 @@
       "name": "Blowater",
       "url": "https://blowater.app",
       "description": "Nostr messenger",
-      "identityTypes": ["chat"],
-      "categories": ["messaging"],
+      "identityTypes": [
+        "chat"
+      ],
+      "categories": [
+        "messaging"
+      ],
       "nip46Support": false
     },
     {
@@ -89,8 +138,12 @@
       "name": "Iris",
       "url": "https://iris.to",
       "description": "Professional Nostr client",
-      "identityTypes": ["work"],
-      "categories": ["social"],
+      "identityTypes": [
+        "work"
+      ],
+      "categories": [
+        "social"
+      ],
       "nip46Support": true
     },
     {
@@ -98,8 +151,13 @@
       "name": "Docstr",
       "url": "https://docstr.app",
       "description": "Collaborative docs",
-      "identityTypes": ["work"],
-      "categories": ["publishing", "tools"],
+      "identityTypes": [
+        "work"
+      ],
+      "categories": [
+        "publishing",
+        "tools"
+      ],
       "nip46Support": false
     },
     {
@@ -107,8 +165,13 @@
       "name": "Highlighter",
       "url": "https://highlighter.com",
       "description": "Publishing platform",
-      "identityTypes": ["work"],
-      "categories": ["publishing", "longform"],
+      "identityTypes": [
+        "work"
+      ],
+      "categories": [
+        "publishing",
+        "longform"
+      ],
       "nip46Support": true
     },
     {
@@ -116,8 +179,13 @@
       "name": "Habla",
       "url": "https://habla.news",
       "description": "Long-form writing",
-      "identityTypes": ["work"],
-      "categories": ["longform", "publishing"],
+      "identityTypes": [
+        "work"
+      ],
+      "categories": [
+        "longform",
+        "publishing"
+      ],
       "nip46Support": true
     },
     {
@@ -125,8 +193,12 @@
       "name": "Wikifreedia",
       "url": "https://wikifreedia.xyz",
       "description": "Decentralised wiki",
-      "identityTypes": ["work"],
-      "categories": ["wiki"],
+      "identityTypes": [
+        "work"
+      ],
+      "categories": [
+        "wiki"
+      ],
       "nip46Support": false
     },
     {
@@ -134,8 +206,12 @@
       "name": "GitWorkshop",
       "url": "https://gitworkshop.dev",
       "description": "Git collaboration",
-      "identityTypes": ["dev"],
-      "categories": ["code"],
+      "identityTypes": [
+        "dev"
+      ],
+      "categories": [
+        "code"
+      ],
       "nip46Support": false
     },
     {
@@ -143,8 +219,12 @@
       "name": "njump",
       "url": "https://njump.me",
       "description": "Nostr event viewer",
-      "identityTypes": ["dev"],
-      "categories": ["tools"],
+      "identityTypes": [
+        "dev"
+      ],
+      "categories": [
+        "tools"
+      ],
       "nip46Support": false
     },
     {
@@ -152,8 +232,13 @@
       "name": "nostr.band",
       "url": "https://nostr.band",
       "description": "Search + analytics",
-      "identityTypes": ["dev"],
-      "categories": ["search", "tools"],
+      "identityTypes": [
+        "dev"
+      ],
+      "categories": [
+        "search",
+        "tools"
+      ],
       "nip46Support": false
     },
     {
@@ -161,8 +246,13 @@
       "name": "DVMs.org",
       "url": "https://dvms.org",
       "description": "AI agents marketplace",
-      "identityTypes": ["dev"],
-      "categories": ["marketplace", "tools"],
+      "identityTypes": [
+        "dev"
+      ],
+      "categories": [
+        "marketplace",
+        "tools"
+      ],
       "nip46Support": false
     },
     {
@@ -170,8 +260,12 @@
       "name": "Stacker News",
       "url": "https://stacker.news",
       "description": "Anonymous discussion",
-      "identityTypes": ["anon"],
-      "categories": ["social"],
+      "identityTypes": [
+        "anon"
+      ],
+      "categories": [
+        "social"
+      ],
       "nip46Support": false
     }
   ]

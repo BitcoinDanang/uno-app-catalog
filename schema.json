@@ -81,6 +81,11 @@
       "type": "string",
       "description": "Optional naddr/nevent pointer to a Zapstore kind:32267 mirror.",
       "pattern": "^(naddr1|nevent1|note1)[0-9a-z]+$"
+    },
+    "addedAt": {
+      "type": "string",
+      "format": "date",
+      "description": "Optional ISO YYYY-MM-DD the entry was first added to the catalog. Drives the R-DISCOVER C-004 weekly digest (\"3 new apps for your <type> self this week\")."
     }
   }
 }
