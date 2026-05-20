@@ -8,10 +8,15 @@
     "build": "node scripts/build.mjs",
     "check": "node scripts/build.mjs --check",
     "publish:r2": "node scripts/build.mjs && node scripts/publish-r2.mjs",
-    "publish:kind32267": "node scripts/publish-kind32267.mjs"
+    "publish:kind32267": "node scripts/publish-kind32267.mjs",
+    "editorial:check": "node scripts/sign-editorial.mjs --check",
+    "editorial:publish": "node scripts/sign-editorial.mjs"
   },
   "dependencies": {
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1"
+  },
+  "optionalDependencies": {
+    "@nostr-dev-kit/ndk": "^3.0.3"
   }
 }

@@ -31,6 +31,41 @@ See `CONTRIBUTING.md` for the PR / review checklist.
 
 ## Phase A scope
 
-This repo currently implements R-DISCOVER **Phase A only** (catalog
-foundation). Editorial events (`kind:30403`) and per-identity ranker live in
-Phase B/C and are not handled here yet.
+This repo implements R-DISCOVER **Phase A** (catalog foundation) and the
+**Phase B-006** editorial-calendar signing workflow. The per-identity ranker
+(Phase C) lives in the Uno client.
+
+## Editorial workflow (Phase B-006)
+
+`editorial-calendar.json` plans daily/weekly hero rotation per identity type.
+Each entry becomes one `kind:30403` event published to Khatru-Uno.
+
+Schema:
+
+```json
+{
+  "date": "YYYY-MM-DD",
+  "slot": "today_hero | featured | new | category_lead_<cat>",
+  "identityType": "social | chat | work | dev | anon",
+  "appId": "primal",         // must exist in catalog.json
+  "ttlHours": 36              // event treated as expired after date+ttl
+}
+```
+
+Workflow:
+
+1. Edit `editorial-calendar.json` (PR review, same as catalog entries).
+2. `pnpm editorial:check` validates entries against `catalog.json`.
+3. Merge to main.
+4. Maintainer runs locally:
+   ```bash
+   CURATOR_NSEC=$(jq -r .nsec /Users/bowz/uno-connect-editorial-key.json) \
+   CATALOG_RELAYS=wss://relay.nostr.uno \
+   pnpm editorial:publish
+   ```
+5. Khatru-Uno's accept-list pins the editorial pubkey; events from any other
+   key are rejected with `restricted: kind 30403 only allowed for the
+   editorial signing key`. Clients pick up the new slot within 5 minutes.
+
+The `d`-tag is `editorial:<slot>:<identityType>` so re-publishing for the
+same slot atomically replaces the previous hero (NIP-33).

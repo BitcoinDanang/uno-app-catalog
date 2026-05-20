@@ -1,0 +1,55 @@
+{
+  "$comment": "R-DISCOVER B-006 editorial calendar. Each entry becomes one kind:30403 event published to Khatru-Uno by scripts/sign-editorial.mjs. The d-tag uniqueness rule means re-running the script for the same (slot, identityType) safely overwrites the previous hero. Identity types: social|chat|work|dev|anon. Slots: today_hero|featured|new|category_lead_<cat>.",
+  "version": 1,
+  "entries": [
+    {
+      "date": "2026-05-20",
+      "slot": "today_hero",
+      "identityType": "social",
+      "appId": "primal",
+      "ttlHours": 36
+    },
+    {
+      "date": "2026-05-20",
+      "slot": "today_hero",
+      "identityType": "work",
+      "appId": "iris",
+      "ttlHours": 36
+    },
+    {
+      "date": "2026-05-20",
+      "slot": "today_hero",
+      "identityType": "dev",
+      "appId": "nostrudel",
+      "ttlHours": 36
+    },
+    {
+      "date": "2026-05-20",
+      "slot": "today_hero",
+      "identityType": "anon",
+      "appId": "snort",
+      "ttlHours": 36
+    },
+    {
+      "date": "2026-05-20",
+      "slot": "today_hero",
+      "identityType": "chat",
+      "appId": "0xchat",
+      "ttlHours": 36
+    },
+    {
+      "date": "2026-05-20",
+      "slot": "featured",
+      "identityType": "social",
+      "appId": "damus",
+      "ttlHours": 168
+    },
+    {
+      "date": "2026-05-20",
+      "slot": "new",
+      "identityType": "social",
+      "appId": "yakihonne",
+      "ttlHours": 168
+    }
+  ]
+}
